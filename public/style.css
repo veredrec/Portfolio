@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: #D1D8E0;
+  font-size: 14px;
+}
+/* navbar */
+.fixed {
+  position: fixed;
+}
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 70%;
+  margin-top: 1rem;
+}
+.button {
+  background-color: #D1D8E0;
+  border: none;
+  border-bottom: 0.02rem solid #AFB0B2;
+  color: #444;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 1rem;
+}
+/* main-content */
+.home {
+  height: 95vh;
+  position: relative;
+}
+.home-content {
+  text-align: center;
+}
+.circles {
+  position: absolute;
+  width: 10rem;
+}
+.circle1 {
+  bottom: -1rem;
+  right: 0;
+}
+.circle2 {
+  top: -2rem;
+  left: 0;
+}
