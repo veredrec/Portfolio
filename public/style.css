@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-around;
   margin-left: 70%;
-  margin-top: 1rem;
+  line-height: 4rem;
 }
 .button {
   background-color: #D1D8E0;
@@ -22,24 +22,44 @@ body {
   color: #444;
   font-family: 'Raleway', sans-serif;
   margin-left: 1rem;
+  font-size: 0.8rem;
+}
+.button:hover {
+  border-bottom: 0.02rem solid #2D3952;
+  font-size: 0.85rem;
+  cursor: pointer;
+  letter-spacing: 0.1rem;
+  transition: ease-in-out 0.3s;
+  /*add transition out to create smoother leave hover*/
 }
 /* main-content */
 .home {
-  height: 95vh;
+  height: 90vh;
+  margin-top: 10vh;
   position: relative;
-}
-.home-content {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .circles {
   position: absolute;
   width: 10rem;
 }
 .circle1 {
-  bottom: -1rem;
+  bottom: 0;
   right: 0;
 }
 .circle2 {
-  top: -2rem;
+  top: -5rem;
   left: 0;
+}
+.title {
+  font-size: 1.8rem;
+}
+.subtitle {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.line {
+  border: 0.1rem solid #AFB0B2;
 }
