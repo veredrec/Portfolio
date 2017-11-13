@@ -9,11 +9,12 @@
   </head>
 
   <body>
-    <nav class="navbar">
+    <nav id="home" class="navbar">
       <div class="fixed">
-        <a id="portfolio" class="button">PORTFOLIO</a>
-        <a id="skills" class="button">SKILLS</a>
-        <a id="contact" class="button">CONTACT</a>
+        <a href="#home" class="button">HOME</a>
+        <a href="#portfolio" class="button">PORTFOLIO</a>
+        <a href="#skills" class="button">SKILLS</a>
+        <a href="#contact" class="button">CONTACT</a>
       </div>
     </nav>
 
@@ -26,11 +27,10 @@
           <p class="subtitle">Aiming to make the world a better place
           <br>through technology and nonstandard education<p>
         </div>
-      <div>
+      </div>
     </section>
 
-    <!-- <hr class="line"> -->
-    <section class="gallery">
+    <section id="portfolio" class="gallery section">
       <h2 class="section-title">PORTFOLIO</h2>
       <div class="gallery-items">
         <div class="project">
@@ -78,8 +78,8 @@
 
     </section>
 
-    <h2 class="section-title">SKILLS</h2>
-    <section class="skills">
+    <h2 id="skills" class="section-title">SKILLS</h2>
+    <section class="skills section">
 
       <div class="skill">
         <i class="devicon-html5-plain"></i>
@@ -143,8 +143,8 @@
 
     </section>
 
-    <section class="contact">
-    <h2 class="section-title">CONTACT</h2>
+    <section id="contact" class="contact section">
+      <h2 class="section-title">CONTACT</h2>
       <form class="form" method="post" action="">
         <input class="input name" type="name" placeholder="NAME" value="" required><br>
         <input class="input email" type="email" placeholder="EMAIL" value="" required><br>
@@ -153,5 +153,10 @@
       </form>
     </section>
 
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </body>
 </html>

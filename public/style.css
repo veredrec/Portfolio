@@ -25,6 +25,7 @@ body {
   font-family: 'Raleway', sans-serif;
   margin-left: 1rem;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 .button:hover {
   border-bottom: 0.02rem solid #2D3952;
@@ -129,6 +130,7 @@ body {
 }
 .form {
   margin-top: 2rem;
+  margin-bottom: 5rem;
 }
 .input, .submit {
   font-size: 1rem;
