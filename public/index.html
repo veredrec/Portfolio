@@ -2,6 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="https://use.fontawesome.com/7a1353cd80.js"></script>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -30,8 +34,9 @@
       </div>
     </section>
 
-    <section id="portfolio" class="gallery section">
+    <section id="portfolio" class="gallery">
       <h2 class="section-title">PORTFOLIO</h2>
+
       <div class="gallery-items">
         <div class="project">
           <a href="https://github.com/veredrec/path-18" target="_blank">
@@ -78,72 +83,73 @@
 
     </section>
 
-    <h2 id="skills" class="section-title">SKILLS</h2>
-    <section class="skills section">
+    <section class="skills-section">
+      <h2 id="skills" class="section-title">SKILLS</h2>
+      <div class="skills">
+        <div class="skill">
+          <i class="devicon-html5-plain"></i>
+          <p class="skill-name">HTML5</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-html5-plain"></i>
-        <p class="skill-name">HTML5</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-css3-plain"></i>
+          <p class="skill-name">CSS3</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-css3-plain"></i>
-        <p class="skill-name">CSS3</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-javascript-plain"></i>
+          <p class="skill-name">JavaScript</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-javascript-plain"></i>
-        <p class="skill-name">JavaScript</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-nodejs-plain"></i>
+          <p class="skill-name">Node.js</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-nodejs-plain"></i>
-        <p class="skill-name">Node.js</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-express-original"></i>
+          <p class="skill-name">Express</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-express-original"></i>
-        <p class="skill-name">Express</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-postgresql-plain"></i>
+          <p class="skill-name">PostgreSQL</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-postgresql-plain"></i>
-        <p class="skill-name">PostgreSQL</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-mongodb-plain"></i>
+          <p class="skill-name">MongoDB</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-mongodb-plain"></i>
-        <p class="skill-name">MongoDB</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-git-plain"></i>
+          <p class="skill-name">Git</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-git-plain"></i>
-        <p class="skill-name">Git</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-github-plain"></i>
+          <p class="skill-name">Github</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-github-plain"></i>
-        <p class="skill-name">Github</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-wordpress-plain"></i>
+          <p class="skill-name">WordPress</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-wordpress-plain"></i>
-        <p class="skill-name">WordPress</p>
-      </div>
+        <div class="skill">
+          <i class="devicon-travis-plain"></i>
+          <p class="skill-name">Travis</p>
+        </div>
 
-      <div class="skill">
-        <i class="devicon-travis-plain"></i>
-        <p class="skill-name">Travis</p>
-      </div>
-
-      <div class="skill">
-        <i class="devicon-atom-original"></i>
-        <p class="skill-name">Atom</p>
+        <div class="skill">
+          <i class="devicon-atom-original"></i>
+          <p class="skill-name">Atom</p>
+        </div>
       </div>
 
     </section>
 
-    <section id="contact" class="contact section">
+    <section id="contact" class="contact">
       <h2 class="section-title">CONTACT</h2>
       <form class="form" method="post" action="">
         <input class="input name" type="name" placeholder="NAME" value="" required><br>
@@ -151,12 +157,24 @@
         <input class="input message" type="textarea" placeholder="MESSAGE" value="" required><br>
         <button class="submit">SUBMIT</button>
       </form>
+
+      <div class="websites">
+        <a class="website-link" href="https://twitter.com/veredrec">
+          <i class="website fa fa-twitter" aria-hidden="true"></i>
+        </a>
+        <a class="website-link" href="https://github.com/veredrec">
+          <i class="website fa fa-github" aria-hidden="true"></i>
+        </a>
+        <a class="website-link" href="https://codepen.io/veredrec/">
+          <i class="website fa fa-codepen" aria-hidden="true"></i>
+        </a>
+        <a class="website-link" href="https://www.linkedin.com/in/vered-rekanati-05204a76/">
+          <i class="website fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+        <!-- <i class="website fa fa-free-code-camp" aria-hidden="true"></i> -->
+      </div>
     </section>
 
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>
