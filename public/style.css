@@ -14,9 +14,11 @@ body {
   justify-content: space-around;
   margin-left: 70%;
   line-height: 4rem;
+  z-index: 2;
+  background-color: #D1D8E0;
 }
 .button {
-  background-color: #D1D8E0;
+  background-color: none;
   border: none;
   border-bottom: 0.02rem solid #AFB0B2;
   color: #444;
@@ -44,6 +46,7 @@ body {
 .circles {
   position: absolute;
   width: 10rem;
+  z-index: -1;
 }
 .circle1 {
   bottom: 0;
@@ -67,15 +70,39 @@ body {
 .gallery {
   display: flex;
   justify-content: space-around;
-  background-color: #FFF;
   flex-wrap: wrap;
+  background-color: #5C6068;
+  padding: 5rem;
 }
 .project-image {
   width: 20rem;
-  max-height: 180px;
+  height: 180px;
   margin: 1rem;
   padding: 0.2rem;
-  border: 0.1rem solid #AFB0B2;
+  border: 0.05rem solid #AFB0B2;
+}
+.project {
+  position: relative;
+}
+.project-title {
+  visibility: hidden;
+  width: 20rem;
+  height: 180px;
+  margin: 1rem;
+  padding: 0.2rem;
+  background-color: #848D9F;
+  opacity: 0.5;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  font-size: 2rem;
+  line-height: 180px;
+  color: #FFF;
+}
+.project:hover .project-title:hover {
+  visibility: visible;
+  z-index: 2;
+  cursor: pointer;
 }
 /* skills */
 .skills {
