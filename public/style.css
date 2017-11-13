@@ -79,7 +79,7 @@ body {
   height: 180px;
   margin: 1.5rem;
   padding: 0.2rem;
-  border: 0.05rem solid #AFB0B2;
+  border: 0.05rem solid #2B2E2E;
 }
 .project {
   position: relative;
@@ -105,6 +105,9 @@ body {
   cursor: pointer;
 }
 /* skills */
+.skills-section {
+  padding-top: 2rem;
+}
 .skills {
   margin-top: 2rem;
   display: flex;
@@ -123,11 +126,11 @@ body {
 /* contact */
 .contact {
   background-color: #B2B7BC;
-  padding: 2rem 0;
+  padding: 2rem 0 1.5rem 0;
 }
 .form {
   margin-top: 2rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 .input, .submit {
   font-size: 1rem;
@@ -161,6 +164,22 @@ body {
 .website-link {
   color: #2B2E2E;
 }
+/* footer */
+.footer {
+  background-color: #D1D8E0;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+.footer-item {
+  color: #2B2E2E;
+
+}
+.footer-text {
+  color: #2B2E2E;
+  font-size: 1rem;
+  margin: 0 1rem;
+}
 /* section-titles */
 .section-title {
   font-size: 1rem;
@@ -171,7 +190,7 @@ body {
   width: 5rem;
   height: 1rem;
   display: block;
-  opacity: 0.3;
+  opacity: 0.5;
   text-align: center;
   border-radius: 3rem;
 }
