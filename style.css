@@ -28,7 +28,7 @@ body {
   text-decoration: none;
 }
 .button:hover {
-  border-bottom: 0.02rem solid #2D3952;
+  border-bottom: 0.02rem solid #872536;
   font-size: 0.85rem;
   cursor: pointer;
   letter-spacing: 0.1rem;
@@ -59,10 +59,10 @@ body {
   left: 0;
 }
 .title {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .subtitle {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 2rem;
 }
 .gallery {
@@ -118,6 +118,12 @@ body {
   font-size: 3rem;
   margin: 2.5rem 5rem;
   text-align: center;
+  transition: all .2s ease-in-out;
+}
+.skill:hover {
+  opacity: 0.9;
+  color: #007154;
+  transform: scale(1.1);
 }
 .skill-name {
   font-size: 0.8rem;
@@ -152,6 +158,7 @@ body {
 .submit {
   background-color: #007154;
   color: #AFB0B2;
+  width: 10rem;
 }
 .websites {
   display: flex;
@@ -173,7 +180,9 @@ body {
 }
 .footer-item {
   color: #2B2E2E;
-
+}
+.email {
+  color: #2B2E2E;
 }
 .footer-text {
   color: #2B2E2E;
@@ -187,10 +196,10 @@ body {
   background-color: #872536;
   padding: 1rem;
   margin: 2rem;
-  width: 5rem;
+  width: 6rem;
   height: 1rem;
   display: block;
-  opacity: 0.5;
+  opacity: 0.8;
   text-align: center;
   border-radius: 3rem;
 }
