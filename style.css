@@ -160,6 +160,11 @@ body {
   color: #AFB0B2;
   width: 10rem;
 }
+.thanks {
+  text-align: center;
+  color: #007154;
+  font-size: 1.2rem;
+}
 .websites {
   display: flex;
   justify-content: center;
