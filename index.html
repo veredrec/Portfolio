@@ -152,12 +152,17 @@
 
     <section id="contact" class="contact">
       <h2 class="section-title">CONTACT</h2>
-      <form class="form" method="post" action="">
-        <input class="input name" type="name" placeholder="Name" value=""><br>
-        <input class="input email" type="email" placeholder="Email" value=""><br>
-        <input class="input message" type="textarea" placeholder="Message" value=""><br>
-        <button class="submit">SEND</button>
+      <form class="form" id="gform" method="post"
+      action="https://script.google.com/macros/s/AKfycbywkoWD4y-xASVZD0hWP9oqko8L--EOUiTNj4_GtDh0zeMQIeSK/exec">
+        <input class="input name" name="name" type="name" placeholder="Name" value=""><br>
+        <input class="input email" name="email" type="email" placeholder="Email" value=""><br>
+        <input class="input message" name="message" type="textarea" placeholder="Message" value=""><br>
+        <button type="submit" name="submit" class="submit">SEND</button>
       </form>
+
+      <div class="thanks" style="display:none;" id="thankyou_message">
+        <h2>Thanks for your message!</h2>
+      </div>
 
       <div class="websites">
         <a class="website-link" href="https://twitter.com/veredrec" target="_blank">
@@ -177,16 +182,16 @@
     </section>
 
     <footer class="footer">
-        <span class="footer-text"> Vered Rekanati </span>
-        <span class="footer-text"> &#10047; </span>
-        <a class="email" href="mailto:veredrec@gmail.com?Subject=from%20website" target="_blank">
-          <span class="footer-text"> veredrec@gmail.com </span>
-        </a>
-        <span class="footer-text"> &#10047; </span>
-        <span class="footer-text"> 2017 </span>
-      <!-- </div> -->
+      <span class="footer-text"> Vered Rekanati </span>
+      <span class="footer-text"> &#10047; </span>
+      <a class="email" href="mailto:veredrec@gmail.com" target="_blank">
+        <span class="footer-text"> veredrec@gmail.com </span>
+      </a>
+      <span class="footer-text"> &#10047; </span>
+      <span class="footer-text"> 2017 </span>
     </footer>
 
+    <script src="form.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
