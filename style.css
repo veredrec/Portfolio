@@ -134,36 +134,13 @@ body {
   background-color: #B2B7BC;
   padding: 2rem 0 1.5rem 0;
 }
-.form {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.input, .submit {
-  font-size: 1rem;
-  padding: 0.5rem;
-  display: block;
-  width: 20rem;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border: 0.1rem solid #848D9F;
-  border-top: 0.2rem inset #848D9F;
-  border-radius: 0.5rem;
-  background-color: #D1D8E0;
-  color: #5C6068;
-}
-.message {
-  height: 3rem;
-  padding-top: 0;
-}
-.submit {
-  background-color: #007154;
-  color: #AFB0B2;
-  width: 10rem;
-}
-.thanks {
+.email-text {
   text-align: center;
-  color: #007154;
-  font-size: 1.2rem;
+  color: #2B2E2E;
+  font-size: 1.8rem;
+}
+a {
+  text-decoration: none;
 }
 .websites {
   display: flex;
@@ -208,3 +185,35 @@ body {
   text-align: center;
   border-radius: 3rem;
 }
+/* form */
+/*.form {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.input, .submit {
+  font-size: 1rem;
+  padding: 0.5rem;
+  display: block;
+  width: 20rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border: 0.1rem solid #848D9F;
+  border-top: 0.2rem inset #848D9F;
+  border-radius: 0.5rem;
+  background-color: #D1D8E0;
+  color: #5C6068;
+}
+.message {
+  height: 3rem;
+  padding-top: 0;
+}
+.submit {
+  background-color: #007154;
+  color: #AFB0B2;
+  width: 10rem;
+}
+.thanks {
+  text-align: center;
+  color: #007154;
+  font-size: 1.2rem;
+}*/
