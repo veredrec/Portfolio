@@ -4,3 +4,7 @@ $('a').click(function(){
   }, 1000);
   return false;
 });
+
+// (function(){
+//   emailjs.init("user_o7aYTKoYf2yMHRYZOpZBm");
+// })();
