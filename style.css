@@ -41,6 +41,202 @@ body {
   position: fixed;
   height: 100%;
 }*/
+/* BIRDS ANIMATION */
+.birds-area {
+  position: relative;
+}
+.bird {
+  position: relative;
+  width: 70px;
+  height: 12px;
+}
+.wing {
+  width: 25px;
+  height: 7px;
+  border-top: 2px solid #000000;
+  border-radius: 50%;
+  position: absolute;
+}
+.bird1 {
+  animation: flying-bird1 30s linear infinite alternate;
+}
+.bird2 {
+  animation: flying-bird2 45s linear infinite alternate;
+}
+.bird3 {
+  animation: flying-bird3 32s linear infinite alternate;
+}
+.bird4 {
+  animation: flying-bird4 30s linear infinite alternate;
+}
+.bird5 {
+  animation: flying-bird5 35s linear infinite alternate;
+}
+.bird6 {
+  animation: flying-bird6 33s linear infinite alternate;
+}
+.bird7 {
+  animation: flying-bird7 35s linear infinite alternate;
+}
+.bird8 {
+  animation: flying-bird8 32s linear infinite alternate;
+}
+.bird9 {
+  animation: flying-bird9 40s linear infinite alternate;
+}
+.bird10 {
+  animation: flying-bird10 35s linear infinite alternate;
+}
+.wing-r {
+  right: 12px;
+  transform: rotate(-20deg);
+  animation: fly-right 1s linear infinite;
+}
+.wing-l {
+  left: 12px;
+  transform: rotate(20deg);
+  animation: fly-left 1s linear infinite;
+}
+
+@keyframes fly-right {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes fly-left {
+  0% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(20deg);
+  }
+}
+
+@keyframes flying-bird1 {
+  0% {
+    transform: translate(320px, 0);
+  }
+  50% {
+    transform: translate(480px, 30px);
+  }
+  100% {
+    transform: rotate(320px, 0);
+  }
+}
+
+@keyframes flying-bird2 {
+  0% {
+    transform: translate(-50px, 90px);
+  }
+  50% {
+    transform: translate(-120px, 145px);
+  }
+  100% {
+    transform: rotate(-50px, 90px);
+  }
+}
+
+@keyframes flying-bird3 {
+  0% {
+    transform: translate(460px, 250px);
+  }
+  50% {
+    transform: translate(100px, 40px);
+  }
+  100% {
+    transform: rotate(460px, 250px);
+  }
+}
+
+@keyframes flying-bird4 {
+  0% {
+    transform: translate(-150, 50px);
+  }
+  50% {
+    transform: translate(200px, 100px);
+  }
+  100% {
+    transform: translate(-150, 50px);
+  }
+}
+
+@keyframes flying-bird5 {
+  0% {
+    transform: translate(780px, 180px);
+  }
+  50% {
+    transform: translate(920px, 40px);
+  }
+  100% {
+    transform: rotate(780px, 180px);
+  }
+}
+@keyframes flying-bird6 {
+  0% {
+    transform: translate(120px, -140px);
+  }
+  50% {
+    transform: translate(-80px, -230px);
+  }
+  100% {
+    transform: rotate(120px, -140px);
+  }
+}
+@keyframes flying-bird7 {
+  0% {
+    transform: translate(250px, -80px);
+  }
+  50% {
+    transform: translate(680px, -30px);
+  }
+  100% {
+    transform: rotate(250px, -80px);
+  }
+}
+@keyframes flying-bird8 {
+  0% {
+    transform: translate(550px, 130px);
+  }
+  50% {
+    transform: translate(700px, 100px);
+  }
+  100% {
+    transform: rotate(550px, 130px);
+  }
+}
+@keyframes flying-bird9 {
+  0% {
+    transform: translate(630px, 200px);
+  }
+  50% {
+    transform: translate(480px, 130px);
+  }
+  100% {
+    transform: rotate(630px, 200px);
+  }
+}
+@keyframes flying-bird10 {
+  0% {
+    transform: translate(-270px, 60px);
+  }
+  50% {
+    transform: translate(0, 30px);
+  }
+  100% {
+    transform: rotate(-270px, 60px);
+  }
+}
+
 /* main-content */
 .home {
   height: 90vh;
@@ -51,7 +247,7 @@ body {
   align-items: center;
   color: #2b2e2e;
 }
-.circles {
+/*.circles {
   position: absolute;
   width: 10rem;
   z-index: -1;
@@ -63,7 +259,7 @@ body {
 .circle2 {
   top: -5rem;
   left: 0;
-}
+}*/
 .my-image {
   width: 100px;
   border-radius: 50%;
