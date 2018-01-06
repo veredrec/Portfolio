@@ -7,7 +7,7 @@
 .wing {
   width: 25px;
   height: 7px;
-  border-top: 2px solid #000000;
+  border-top: 2px solid #2d3033;
   border-radius: 50%;
   position: absolute;
 }
@@ -93,7 +93,7 @@
     transform: translate(-50px, 90px);
   }
   50% {
-    transform: translate(-120px, 145px);
+    transform: translate(-100px, 145px);
   }
   100% {
     transform: rotate(-50px, 90px);
@@ -151,7 +151,7 @@
     transform: translate(250px, -80px);
   }
   50% {
-    transform: translate(480px, -30px);
+    transform: translate(150px, -30px);
   }
   100% {
     transform: rotate(250px, -80px);
@@ -188,5 +188,22 @@
   }
   100% {
     transform: rotate(-270px, 60px);
+  }
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 780px) {
+  .bird1,
+  .bird2,
+  .bird3,
+  .bird4,
+  .bird5,
+  .bird6,
+  .bird7,
+  .bird8,
+  .bird9,
+  .bird10 {
+    animation: none;
+    display: none;
   }
 }
