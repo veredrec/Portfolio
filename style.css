@@ -1,29 +1,34 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cabin', sans-serif;
   background-color: #d1d8e0;
   font-size: 14px;
 }
 /* navbar */
-.fixed {
-  position: fixed;
-  background-color: #d1d8e0;
-  border-radius: 1rem;
+.header {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+@keyframes menu-slide {
+  100% {
+    opacity: 0.8;
+    margin-top: 0;
+  }
 }
 .navbar {
-  display: flex;
-  justify-content: space-around;
-  margin-left: 70%;
   line-height: 3rem;
-  z-index: 2;
+  margin-top: 2rem;
+  opacity: 0;
+  animation: menu-slide 1s ease-in forwards;
 }
 .button {
   padding: 0.3rem;
   border: none;
   border-bottom: 0.02rem solid #afb0b2;
   color: #2b2e2e;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Cabin', sans-serif;
   margin-left: 1rem;
   font-size: 0.8rem;
   text-decoration: none;
@@ -36,206 +41,6 @@ body {
   cursor: pointer;
   letter-spacing: 0.1rem;
 }
-/*.canvas {
-  border: 2px solid red;
-  position: fixed;
-  height: 100%;
-}*/
-/* BIRDS ANIMATION */
-.birds-area {
-  position: relative;
-}
-.bird {
-  position: relative;
-  width: 70px;
-  height: 12px;
-}
-.wing {
-  width: 25px;
-  height: 7px;
-  border-top: 2px solid #000000;
-  border-radius: 50%;
-  position: absolute;
-}
-.bird1 {
-  animation: flying-bird1 30s linear infinite alternate;
-}
-.bird2 {
-  animation: flying-bird2 45s linear infinite alternate;
-}
-.bird3 {
-  animation: flying-bird3 32s linear infinite alternate;
-}
-.bird4 {
-  animation: flying-bird4 30s linear infinite alternate;
-}
-.bird5 {
-  animation: flying-bird5 35s linear infinite alternate;
-}
-.bird6 {
-  animation: flying-bird6 33s linear infinite alternate;
-}
-.bird7 {
-  animation: flying-bird7 35s linear infinite alternate;
-}
-.bird8 {
-  animation: flying-bird8 32s linear infinite alternate;
-}
-.bird9 {
-  animation: flying-bird9 40s linear infinite alternate;
-}
-.bird10 {
-  animation: flying-bird10 35s linear infinite alternate;
-}
-.wing-r {
-  right: 12px;
-  transform: rotate(-20deg);
-  animation: fly-right 1s linear infinite;
-}
-.wing-l {
-  left: 12px;
-  transform: rotate(20deg);
-  animation: fly-left 1s linear infinite;
-}
-
-@keyframes fly-right {
-  0% {
-    transform: rotate(-20deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(-20deg);
-  }
-}
-
-@keyframes fly-left {
-  0% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(20deg);
-  }
-}
-
-@keyframes flying-bird1 {
-  0% {
-    transform: translate(320px, 0);
-  }
-  50% {
-    transform: translate(480px, 30px);
-  }
-  100% {
-    transform: rotate(320px, 0);
-  }
-}
-
-@keyframes flying-bird2 {
-  0% {
-    transform: translate(-50px, 90px);
-  }
-  50% {
-    transform: translate(-120px, 145px);
-  }
-  100% {
-    transform: rotate(-50px, 90px);
-  }
-}
-
-@keyframes flying-bird3 {
-  0% {
-    transform: translate(460px, 250px);
-  }
-  50% {
-    transform: translate(100px, 40px);
-  }
-  100% {
-    transform: rotate(460px, 250px);
-  }
-}
-
-@keyframes flying-bird4 {
-  0% {
-    transform: translate(-150, 50px);
-  }
-  50% {
-    transform: translate(200px, 100px);
-  }
-  100% {
-    transform: translate(-150, 50px);
-  }
-}
-
-@keyframes flying-bird5 {
-  0% {
-    transform: translate(780px, 180px);
-  }
-  50% {
-    transform: translate(920px, 40px);
-  }
-  100% {
-    transform: rotate(780px, 180px);
-  }
-}
-@keyframes flying-bird6 {
-  0% {
-    transform: translate(120px, -140px);
-  }
-  50% {
-    transform: translate(-80px, -230px);
-  }
-  100% {
-    transform: rotate(120px, -140px);
-  }
-}
-@keyframes flying-bird7 {
-  0% {
-    transform: translate(250px, -80px);
-  }
-  50% {
-    transform: translate(680px, -30px);
-  }
-  100% {
-    transform: rotate(250px, -80px);
-  }
-}
-@keyframes flying-bird8 {
-  0% {
-    transform: translate(550px, 130px);
-  }
-  50% {
-    transform: translate(700px, 100px);
-  }
-  100% {
-    transform: rotate(550px, 130px);
-  }
-}
-@keyframes flying-bird9 {
-  0% {
-    transform: translate(630px, 200px);
-  }
-  50% {
-    transform: translate(480px, 130px);
-  }
-  100% {
-    transform: rotate(630px, 200px);
-  }
-}
-@keyframes flying-bird10 {
-  0% {
-    transform: translate(-270px, 60px);
-  }
-  50% {
-    transform: translate(0, 30px);
-  }
-  100% {
-    transform: rotate(-270px, 60px);
-  }
-}
 
 /* main-content */
 .home {
@@ -247,25 +52,13 @@ body {
   align-items: center;
   color: #2b2e2e;
 }
-/*.circles {
-  position: absolute;
-  width: 10rem;
-  z-index: -1;
-}
-.circle1 {
-  bottom: 0;
-  right: 0;
-}
-.circle2 {
-  top: -5rem;
-  left: 0;
-}*/
 .my-image {
   width: 100px;
   border-radius: 50%;
 }
 .title {
   font-size: 1.3rem;
+  letter-spacing: 0.4rem;
 }
 .subtitle {
   font-size: 1.6rem;
@@ -328,12 +121,12 @@ body {
   font-size: 3rem;
   margin: 2.5rem 4rem;
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s linear;
 }
 .skill:hover {
   opacity: 0.9;
   color: #007154;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 .skill-name {
   font-size: 0.8rem;
@@ -355,11 +148,12 @@ a {
 .websites {
   display: flex;
   justify-content: center;
-  transition: all 0.3s ease-in-out;
 }
 .website {
   font-size: 3rem;
   margin: 2rem;
+  transition: all 0.5s linear;
+  color: #c0e1d3;
 }
 .website:hover {
   opacity: 0.9;
@@ -401,35 +195,15 @@ a {
   text-align: center;
   border-radius: 3rem;
 }
-/* form */
-/*.form {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 780px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+  .header {
+    justify-content: flex-start;
+  }
 }
-.input, .submit {
-  font-size: 1rem;
-  padding: 0.5rem;
-  display: block;
-  width: 20rem;
-  margin: 0 auto;
-  margin-top: 1rem;
-  border: 0.1rem solid #848D9F;
-  border-top: 0.2rem inset #848D9F;
-  border-radius: 0.5rem;
-  background-color: #D1D8E0;
-  color: #5C6068;
-}
-.message {
-  height: 3rem;
-  padding-top: 0;
-}
-.submit {
-  background-color: #007154;
-  color: #AFB0B2;
-  width: 10rem;
-}
-.thanks {
-  text-align: center;
-  color: #007154;
-  font-size: 1.2rem;
-}*/
