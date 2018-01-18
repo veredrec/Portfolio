@@ -11,17 +11,17 @@ body {
   justify-content: flex-end;
   flex-direction: row;
 }
-@keyframes menu-slide {
+/*@keyframes menu-slide {
   100% {
     opacity: 0.8;
     margin-top: 0;
   }
-}
+}*/
 .navbar {
   line-height: 3rem;
   margin-top: 2rem;
   opacity: 0;
-  animation: menu-slide 1s ease-in forwards;
+  /*animation: menus-slide 1s ease-in forwards;*/
 }
 .button {
   padding: 0.3rem;
@@ -64,6 +64,7 @@ body {
   font-size: 1.6rem;
   line-height: 2rem;
 }
+
 /* gallery */
 .gallery {
   background-color: #2d3033;
