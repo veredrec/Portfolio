@@ -87,11 +87,10 @@ body {
   flex-basis: 2;
 }
 .project-title {
-  font-family: 'Kalam', cursive;
   text-decoration: none;
   color: #292d42;
   margin: 0;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   border-bottom: 2px solid rgba(12, 40, 69, 0);
   transition: all 1.5s ease-in;
 }
@@ -135,17 +134,17 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-size: 2rem;
   margin: 2rem;
   color: #335252;
 }
 .project-skill {
+  font-size: 3rem;
   display: flex;
   flex-direction: column;
   margin: 1rem;
 }
-.skill-name {
-  font-size: 0.8rem;
+.project-skill-name {
+  font-size: 1rem;
 }
 
 /* skills */
