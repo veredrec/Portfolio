@@ -2,35 +2,54 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Didact Gothic', sans-serif;
-  background-color: #d4dde1;
+  background: linear-gradient(to right, #a1c4fd, #c2e9fb);
   font-size: 14px;
+  color: #292d42;
 }
-/* navbar */
+/* header */
 .header {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: row;
+  background-color: #292d42;
+  margin: 0;
 }
-/*@keyframes menu-slide {
-  100% {
-    opacity: 0.8;
-    margin-top: 0;
-  }
-}*/
+.title {
+  color: #e2d1c3;
+  margin: 0;
+  padding: 1rem;
+  font-family: 'Kalam', cursive;
+  font-size: 1.3rem;
+  letter-spacing: 0.4rem;
+}
+
+/* main-content */
+.home {
+  height: 90vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2b2e2e;
+}
+.my-image {
+  width: 100px;
+  border-radius: 50%;
+}
+.subtitle {
+  font-size: 1.6rem;
+  line-height: 2rem;
+}
 .navbar {
   line-height: 3rem;
-  margin-top: 2rem;
-  opacity: 0;
-  /*animation: menus-slide 1s ease-in forwards;*/
+  display: flex;
+  justify-content: space-around;
 }
 .button {
-  padding: 0.3rem;
+  padding: 0.2rem;
   border: none;
   border-bottom: 0.02rem solid #aa4b41;
   color: #aa4b41;
   font-family: 'Didact Gothic', sans-serif;
   margin-left: 1rem;
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-decoration: none;
   opacity: 0.8;
   transition: 0.3s ease-in-out;
@@ -42,70 +61,95 @@ body {
   letter-spacing: 0.1rem;
 }
 
-/* main-content */
-.home {
-  height: 90vh;
-  margin-top: 10vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #2b2e2e;
-}
-.my-image {
-  width: 100px;
-  border-radius: 50%;
-}
-.title {
-  font-size: 1.3rem;
-  letter-spacing: 0.4rem;
-}
-.subtitle {
-  font-size: 1.6rem;
-  line-height: 2rem;
-}
-
 /* gallery */
 .gallery {
-  background-color: #2d3033;
-  padding: 2rem 0;
+  padding: 2rem;
+  background: linear-gradient(to right, #fdfcfb, #e2d1c3);
 }
-.gallery-items {
+.gallery-item {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-direction: row;
+  margin: 2rem 0;
+  padding: 2rem 0;
 }
-.project {
-  position: relative;
-  opacity: 0.8;
-  transition: filter 0.5s ease-in;
+.reverse {
+  flex-direction: row-reverse;
 }
-.project-image {
-  width: 18rem;
-  height: 170px;
-  margin: 1.5rem;
-  border: 0.1rem solid #85898d;
+.project-text {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 1rem;
+  text-align: center;
+  flex-basis: 2;
 }
 .project-title {
-  width: 18rem;
-  height: 170px;
-  background-color: #d4dde1;
-  opacity: 0;
-  text-align: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 90px;
-  color: #0b0b0b;
-  cursor: pointer;
-  margin: 1.5rem;
-  transition: opacity 0.5s ease-in-out;
+  font-family: 'Kalam', cursive;
+  text-decoration: none;
+  color: #292d42;
+  margin: 0;
+  font-size: 1.6rem;
 }
 .project-title:hover {
-  opacity: 0.7;
+  border-bottom: 2px solid black;
+  border-width: 1px;
+  animation: titleGrow 3s linear;
 }
+@@keyframes titleGrow {
+  0% {
+    border-width: 1px;
+  }
+  100% {
+    border-width: 50px;
+  }
+}
+.text {
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  width: 80%;
+  margin: 0 auto;
+}
+.project-image {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.image {
+  margin: 1rem;
+  padding: 0.7rem;
+}
+.git {
+  font-size: 0.8rem;
+  background-color: #a1c4fd;
+  color: #222;
+  padding: 0.5rem;
+  display: block;
+  margin: 0.5rem auto;
+  border: none;
+  font-family: 'Didact Gothic', sans-serif;
+  border-radius: 0.3rem;
+}
+.git:focus {
+  outline: 0;
+}
+.project-skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-size: 2rem;
+  margin: 2rem;
+  color: #335252;
+}
+.project-skill {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+.skill-name {
+  font-size: 0.8rem;
+}
+
 /* skills */
 .skills-section {
   padding-top: 2rem;
@@ -117,8 +161,8 @@ body {
   flex-wrap: wrap;
 }
 .skill {
-  font-size: 3rem;
-  margin: 2.5rem 4rem;
+  font-size: 2.5rem;
+  margin: 1.5rem 3rem;
   text-align: center;
   transition: all 0.5s linear;
   color: #335252;
@@ -132,6 +176,7 @@ body {
   font-size: 0.8rem;
   text-align: center;
 }
+
 /* contact */
 .contact {
   background-color: #2d3033;
@@ -164,15 +209,13 @@ a {
 .website-link {
   color: #2b2e2e;
 }
+
 /* footer */
 .footer {
   background-color: #d4dde1;
   padding: 0.5rem;
   display: flex;
   justify-content: center;
-}
-.footer-item {
-  color: #2b2e2e;
 }
 .email {
   color: #2b2e2e;
@@ -182,6 +225,11 @@ a {
   font-size: 1rem;
   margin: 0 1rem;
 }
+.footer-link:hover {
+  color: #aa4b41;
+  text-decoration: underline;
+}
+
 /* section-titles */
 .section-title {
   font-size: 1rem;
@@ -197,15 +245,12 @@ a {
 }
 
 /* RESPONSIVE DESIGN */
-@media screen and (max-width: 780px) and (min-width: 351px) {
-  .header {
-    margin-top: 2rem;
-  }
+@media screen and (max-width: 780px) {
   .navbar {
-    display: flex;
-    flex-direction: column;
-    align-content: flex-end;
-    line-height: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .button {
+    font-size: 0.6rem;
   }
   .header {
     justify-content: flex-start;
@@ -217,51 +262,16 @@ a {
   .my-image {
     margin-left: 2rem;
   }
-  .title {
-    margin-left: 2rem;
-  }
   .subtitle {
     margin-left: 2rem;
   }
-}
-@media screen and (max-width: 350px) {
-  .header {
-    margin-top: 1rem;
+  .image {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
   }
-  .navbar {
-    display: flex;
+  .gallery-item {
     flex-direction: column;
-    align-content: flex-end;
-    line-height: 1rem;
-  }
-  .header {
-    justify-content: flex-start;
-  }
-  .home {
-    height: auto;
-    margin-top: 10vh;
-  }
-  .my-image {
-    margin-left: 2rem;
-  }
-  .title {
-    margin-left: 2rem;
-  }
-  .subtitle {
-    margin-left: 2rem;
-  }
-  .project-image {
-    width: 15rem;
-    height: 150px;
-    margin: 1.5rem;
-  }
-  .project-title {
-    width: 15rem;
-    height: 150px;
-    margin: 1.5rem;
-  }
-  .skill {
-    margin: 1.5rem;
   }
   .footer {
     padding: 0.3rem;
