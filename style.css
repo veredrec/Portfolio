@@ -36,6 +36,7 @@ body {
 .subtitle {
   font-size: 1.6rem;
   line-height: 2rem;
+  text-align: center;
 }
 .navbar {
   line-height: 3rem;
@@ -56,9 +57,9 @@ body {
 }
 .button:hover {
   border-bottom: 0.02rem solid #872536;
-  font-size: 0.85rem;
+  font-size: 0.95rem;
   cursor: pointer;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.15rem;
 }
 
 /* gallery */
@@ -72,6 +73,7 @@ body {
   flex-direction: row;
   margin: 2rem 0;
   padding: 2rem 0;
+  border-bottom: 1px solid #872536;
 }
 .reverse {
   flex-direction: row-reverse;
@@ -99,7 +101,6 @@ body {
 .text {
   font-size: 1.2rem;
   line-height: 1.4rem;
-  width: 80%;
   margin: 0 auto;
 }
 .project-image {
