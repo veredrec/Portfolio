@@ -4,12 +4,12 @@
 
 [Click Here to see my Portfolio](https://veredrec.github.io/Portfolio/)
 
-[Or visit my GitHub Here](https://github.com/veredrec)
+[Or visit my GitHub](https://github.com/veredrec) :octocat:
 
-:arrow_right: Full-Stack Web Developer
+:heavy_check_mark: Full-Stack Web Developer
 
-:arrow_right: Graduate from Founders and Coders - a competitive Web Development Bootcamp
+:heavy_check_mark: Graduate from [Founders and Coders](https://foundersandcoders.com/) - a competitive Web Development Bootcamp
 
-:arrow_right: Front End Web Development Certificate - Free Code Camp
+:heavy_check_mark: Front End Web Development Certificate - [Free Code Camp](https://www.freecodecamp.org/veredrec)
 
-If you would like to contact me, please email me at **veredrec@gmail.com**
+If you would like to get in touch, please email me at **veredrec@gmail.com**
