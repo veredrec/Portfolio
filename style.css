@@ -146,13 +146,17 @@ body {
 .project-skill-name {
   font-size: 1rem;
 }
+.last-item {
+  margin-bottom: 0;
+  padding-bottom: 1rem;
+}
 
 /* skills */
 .skills-section {
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 .skills {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -230,15 +234,15 @@ a {
 /* section-titles */
 .section-title {
   font-size: 1rem;
-  color: #d4dde1;
-  background-color: #aa4b41;
-  padding: 1rem;
-  margin: 2rem;
+  color: #292d42;
+  padding: 0.5rem;
+  margin: 0.5rem;
   width: 6rem;
   height: 1rem;
   display: block;
   text-align: center;
-  border-radius: 3rem;
+  text-decoration: underline;
+  text-underline-position: under;
 }
 
 /* RESPONSIVE DESIGN */
