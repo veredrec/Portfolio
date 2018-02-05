@@ -15,12 +15,13 @@ body {
   color: #e2d1c3;
   margin: 0;
   padding: 1rem;
+  padding-left: 2rem;
   font-family: 'Kalam', cursive;
   font-size: 1.3rem;
   letter-spacing: 0.4rem;
 }
 
-/* main-content */
+/* home */
 .home {
   height: 90vh;
   position: relative;
@@ -47,7 +48,7 @@ body {
   padding: 0.2rem;
   border: none;
   border-bottom: 0.02rem solid #aa4b41;
-  color: #aa4b41;
+  color: #292d42;
   font-family: 'Didact Gothic', sans-serif;
   margin-left: 1rem;
   font-size: 0.9rem;
@@ -56,10 +57,11 @@ body {
   transition: 0.3s ease-in-out;
 }
 .button:hover {
+  color: #aa4b41;
   border-bottom: 0.02rem solid #872536;
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   cursor: pointer;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.1rem;
 }
 
 /* gallery */
@@ -149,6 +151,27 @@ body {
 .last-item {
   margin-bottom: 0;
   padding-bottom: 1rem;
+}
+
+/* ux design */
+.ux {
+  background: linear-gradient(to right, #f1f0df, #fbf9cf);
+  padding: 2rem;
+}
+.ux-text {
+  text-align: center;
+  color: #292d42;
+  font-size: 1.4rem;
+}
+.ux-img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.view-link {
+  color: #222;
+  opacity: 0.8;
 }
 
 /* skills */
