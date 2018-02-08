@@ -297,6 +297,9 @@ a {
   .gallery-item {
     flex-direction: column;
   }
+  .ux-img {
+    width: 80%;
+  }
   .skill {
     margin: 1.2rem;
   }
