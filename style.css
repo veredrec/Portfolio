@@ -305,9 +305,17 @@ a {
   }
   .gallery-item {
     flex-direction: column;
+    padding: 1rem 0;
+  }
+  .view-button {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
   }
   .ux-img {
     width: 80%;
+  }
+  .project-skills {
+    margin: 1rem;
   }
   .skill {
     margin: 1.2rem;
