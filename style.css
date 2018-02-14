@@ -113,24 +113,33 @@ body {
   margin: 1rem;
   padding: 0.7rem;
 }
+.project-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
 .view-button {
   font-size: 1rem;
   background-color: #a1c4fd;
   color: #222;
   padding: 0.5rem 0.7rem;
   display: block;
-  margin: 0.5rem auto;
+  margin: 0.5rem;
   border: none;
   font-family: 'Didact Gothic', sans-serif;
   border-radius: 0.3rem;
   opacity: 0.6;
-  transition: all 0.5s ease-in;
+  transition: all 0.4s ease-in;
 }
 .view-button:focus {
   outline: 0;
 }
 .view-button:hover {
   opacity: 1;
+}
+.ux-center {
+  display: block;
+  margin: 0 auto;
 }
 .project-skills {
   display: flex;
